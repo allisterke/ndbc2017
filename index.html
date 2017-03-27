@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="jquery.min-3.2.1.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>NDBC2017</title>
+</head>
+<body>
+<div class="container">
+    <div class="dropdown">
+        <button class="dropbtn">NDBC2017</button>
+        <!--<div class="dropdown-content">-->
+        <!--</div>-->
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">会议通知</button>
+        <div class="dropdown-content">
+            <a href="#">会议通知</a>
+            <a href="#">会议组织</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">简要日程</button>
+        <div class="dropdown-content">
+            <table>
+                <tr>
+                    <td><a href="#">简要日程</a></td>
+                    <td><a href="#">特约报告</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">新技术报告</a></td>
+                    <td><a href="#">研究生学术辅导</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">SIGMOD China</a></td>
+                    <td><a href="#">大数据教学论坛</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">企业报告</a></td>
+                    <td><a href="#">软件学报特刊专场</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">分组讨论</a></td>
+                    <td><a href="#">系统演示</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">会议注册</button>
+        <div class="dropdown-content">
+            <a href="#">会议注册</a>
+            <a href="#">邀请函</a>
+            <a href="#">交通住宿</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">征文通知</button>
+        <div class="dropdown-content">
+            <a href="#">征文通知</a>
+            <a href="#">录用论文</a>
+            <a href="#">终稿提交</a>
+            <a href="#">获奖论文</a>
+            <a href="#">审稿人</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">联系我们</button>
+        <div class="dropdown-content">
+            <a href="#">联系我们</a>
+            <a href="#">赞助单位</a>
+            <a href="#">历届会议</a>
+            <a href="#">美丽杭州</a>
+        </div>
+    </div>
+</div>
+<div>
+    <ul id="exampleSlider">
+        <li><img src="images/zju/01.png" alt="" /></li>
+        <li><img src="images/zju/02.png" alt="" /></li>
+        <li><img src="images/zju/03.png" alt="" /></li>
+        <li><img src="images/zju/04.png" alt="" /></li>
+    </ul>
+</div>
+
+<div>
+    <h1>第34届中国数据库学术会议</h1>
+    <h3>The 34th National Database Conference (NDBC 2017)</h3>
+    <p>October 20-22, 2017</p>
+    <p>Hangzhou, China</p>
+</div>
+
+<hr>
+
+<div>
+    <h1>最新通知</h1>
+    <ul>
+        <li>
+            <div><b>2017/03/24</b></div>
+            <div>NDBC2017网站测试上线</div>
+        </li>
+    </ul>
+</div>
+
+<hr>
+
+<div>
+    <h1>中国数据库学术会议介绍</h1>
+    <ol>
+        <li>由数据库专业委员会举办的全国数据库学术会议(NDBC)始于1977年。</li>
+        <li>自1999年数据库专委会成立以来，数据库专委会继承中国数据库多年来形成的优良传统，致力于办好这一传统的数据库盛会，为中国大陆、香港、台湾、澳门和海外华裔数据库研究者、开发者和用户提供一个大中华数据库论坛，交流有关数据库研究与应用的成果和经验，探讨数据库研究与应用所面临的关键性挑战问题和研究方向，至今已举办32届。</li>
+        <li>在最近几年中，会议收文的数量逐年递增，而论文的录取率却逐年递减，标志着数据库年会影响范围的扩大和论文质量的提高。</li>
+        <li>参加全国数据库学术会议的人数也在增长，近几年来，已经吸引了不少海内外的作者投稿和参会。与此同时，数据库专委会努力扩大国际交流，寻求与国际数据库学术组织的广泛合作，将NDBC逐步与国际接轨，使之成为亚太地区，乃至世界性的有影响力的国际会议。</li>
+        <li>经过几年的努力，我们高兴地看到NDBC正朝着预定的目标稳步前进。</li>
+    </ol>
+</div>
+
+<hr>
+
+<div>
+    <h1>相关单位</h1>
+    <div>
+        主办单位：中国计算机学会
+    </div>
+    <div>
+        承办单位：中国计算机学会数据库专业委员会、浙江大学
+    </div>
+    <div>
+        协办单位：中国计量大学、浙江工业大学、杭州电子科技大学、浙江工商大学
+    </div>
+</div>
+
+<hr />
+
+<!--<br />-->
+<!--<br />-->
+<!--<br />-->
+
+<div class="footer">
+    <!--<br />-->
+    The 34th National Database Conference (NDBC 2017)
+    <!--<br />-->
+    <!--<br />-->
+</div>
+
+<script lang="javascript">
+    $(function () {
+
+        /* SET PARAMETERS */
+        var change_img_time 	= 6000;
+        var transition_speed	= 300*2;
+
+        var simple_slideshow	= $("#exampleSlider"),
+            listItems 			= simple_slideshow.children('li'),
+            listLen				= listItems.length,
+            i 					= 0,
+
+            changeList = function () {
+
+                listItems.eq(i).fadeOut(transition_speed, function () {
+                    i += 1;
+                    if (i === listLen) {
+                        i = 0;
+                    }
+                    listItems.eq(i).fadeIn(transition_speed);
+                });
+
+            };
+
+        listItems.not(':first').hide();
+        setInterval(changeList, change_img_time);
+
+    });
+</script>
+</body>
+</html>
