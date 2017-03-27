@@ -37,7 +37,7 @@ body {
 }
 
 .container a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .dropdown-content {
@@ -84,4 +84,29 @@ img {
     font-family: Arial;
     text-align: center;
     /*color: #ffffff;*/
+}
+
+img.logo {
+    width: 100px;
+    height: 100px;
+}
+
+a.link:hover {
+    text-decoration: none;
+}
+
+a.link:visited {
+    text-decoration: none;
+}
+
+a.link:link {
+    text-decoration: none;
+}
+
+a.link:active {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
 }
