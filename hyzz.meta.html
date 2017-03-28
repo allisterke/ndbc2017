@@ -42,10 +42,10 @@
         var content = []
         for(var i = 0; i < organizers.length; ++ i) {
             if(organizers[i].indexOf("主席") > 0) {
-                content.push("<br>");
+                content.push("<br />");
                 content.push("<div>");
                 content.push("<b>");
-                content.push(organizers[i]);
+                content.push(organizers[i].replace(" ", ""));
                 content.push("</b>");
                 content.push("</div>");
             }
@@ -55,6 +55,7 @@
                 content.push("</div>");
             }
         }
+        content.push("<br />");
         $('#organizers-div').html(content.join(''));
     })
 </script>
