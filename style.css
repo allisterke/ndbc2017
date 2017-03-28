@@ -4,7 +4,7 @@ body {
     position: absolute;
     width: 80%;
     left: 10%;
-    font-family: "Arial", "Microsoft JhengHei", "PingFang";
+    font-family: "Arial", "Microsoft JhengHei", "PingFang", '宋体';
 }
 
 .container {
@@ -34,6 +34,7 @@ body {
     color: white;
     padding: 14px 16px;
     background-color: inherit;
+    font-family: "Arial", "Microsoft JhengHei", "PingFang", '宋体';
 }
 
 .container a:hover, .dropdown:hover .dropbtn {
