@@ -1,0 +1,65 @@
+<script>
+    $(document).ready(function () {
+        document.title = document.getElementsByTagName("h1")[0].innerHTML;
+    })
+</script>
+
+<h1 align="center">第 34 届中国数据库学术会议（ NDBC 2017）征文通知</h1>
+<p>第 34 届中国数据库学术会议（ NDBC 2017）将于 2017 年 10 月 20 日至 22 日在浙江省杭州市举行。本次会议由中国计算机学会主办，中国计算机学会数据库专业委员会协办，浙江大学承办，中国计量大学、浙江工业大学、杭州电子科技大学和浙江工商大学协办。</p>
+<p>本届会议将主要关注数据库技术所面临的新的挑战问题和研究方向，着力反映我国数据库技术研究的最新进展。本届会议将继续设立“系统演示”主题，并继续开设“研究生论文指导计划”研讨班等。届时还将邀请国内外数据库领域著名专家到会作专题报告。我们诚征数据管理及其应用领域的论文、专题讨论与系统演示报告等。</p>
+<ol class="notice">
+    <li><span class="notice-item">征文范围(不限于这些领域)：</span>
+        <table id="area-table" border="1">
+        </table>
+    </li>
+    <li><span class="notice-item">投稿要求：</span>
+        <div>1）论文应是未发表的研究成果，应包括中英文题目、中英文摘要、关键词、正文和参考文献。由于论文采用匿名评审，故论文中不能包含任何作者相关信息（如姓名、单位、电子邮件、通信地址、资助项目等）。</div>
+        <div>2）论文中英文均可（鼓励中文），用 Word 排版，论文篇幅一般不超过 A4 幅面 8 页。其格式需参考《计算机研究与发展》的投稿要求，可见《计算机研究与发展》网站。<a href="http://crad.ict.ac.cn/">http://crad.ict.ac.cn/</a></div>
+        <div>3）会议论文均采用网上提交方式，不支持电子邮件提交论文的方式。</div>
+        <div>4）投稿网址： <a href="https://easychair.org/conferences/?conf=ndbc2017">https://easychair.org/conferences/?conf=ndbc2017</a></div>
+    </li>
+    <li><span class="notice-item">系统演示：</span>
+        <div>本次大会设立系统演示程序（ Demonstration Program），欢迎大家踊跃投稿。详细信息请见系统演示征文通知。</div>
+    </li>
+    <li><span class="notice-item">论文出版：</span>
+        <div>会议录用论文将分 A 辑和 B 辑出版，论文拟安排在《计算机学报》（正刊）、《计算机研究与发展》（正刊）、《计算机科学与探索》（正刊）、《计算机研究与发展（增刊）》等刊出版。优秀论文还将推荐到《软件学报》（正刊）。</div>
+    </li>
+    <li><span class="notice-item">重要日期：</span>
+        <div>论文提交截止时间： 2017 年 5 月 1 日，论文录用通知时间： 2017 年 6 月 10 日</div>
+        <div>排版稿件截止时间： 2017 年 6 月 17 日，提交出版社时间： 2017 年 6 月 25 日</div>
+    </li>
+    <li><span class="notice-item">联系方式：</span>
+        <div>会议网站： <a href="http://www.cs.zju.edu.cn/ndbc2017">http://www.cs.zju.edu.cn/ndbc2017</a></div>
+        <div>联系人：高云君</div>
+        <div>邮件： gaoyj@zju.edu.cn, raygaoyj@gmail.com</div>
+        <div>电话： +86-139-5716-7510</div>
+    </li>
+</ol>
+
+<script>
+    $(document).ready(function () {
+        var areas = ['数据库实现新技术 云计算环境中的数据管理 Web 数据管理',
+            '查询处理与查询优化 数据流管理 XML 和半结构化数据',
+            '数据仓库和 OLAP 近似和非确定性数据库 内容与知识管理',
+            '数据挖掘和知识发现 元数据管理 数据集成和迁移',
+            '嵌入式数据库与移动数据库 并行和分布式数据库系统 特定领域的数据库系统',
+            '数据库自管理 智能用户接口技术 空间和时态数据库系统',
+            '多媒体数据库技术 数据隐私和安全 信息检索与数据库',
+            '物联网数据管理 数据库系统性能评测 新型存储中的数据管理'];
+        var content = [];
+        for (var i = 0; i < areas.length; ++ i) {
+            var line = areas[i];
+            line = line.replace("Web ", "Web");
+            line = line.replace(/和 | 和/g, "和");
+            var list =line.split(' ')
+            content.push("<tr>");
+            for (var j = 0; j < 3; ++ j) {
+                content.push("<td>");
+                content.push(j < list.length ? list[j] : "");
+                content.push("</td>");
+            }
+            content.push("</tr>");
+        }
+        $("#area-table").html(content.join(''));
+    })
+</script>

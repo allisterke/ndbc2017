@@ -1,0 +1,60 @@
+<script>
+    $(document).ready(function () {
+        document.title = document.getElementsByTagName("h1")[0].innerHTML;
+    })
+</script>
+
+<h1 align="center">第 34 届中国数据库学术会议（ NDBC 2017）组织</h1>
+<!--<div id="organizers-div" style="left: 10%; position: relative;">-->
+<div id="organizers-div" style="text-align: center;"></div>
+
+<script>
+    $(document).ready(function () {
+        var organizers = ['大会主席（ General Co-Chairs）',
+        '陈纯（浙江大学）',
+        '王珊（中国人民大学）',
+        '程序委员会主席（ PC Co-Chairs）',
+        '李飞飞（美国犹他大学） ',
+        '陈刚（浙江大学）',
+        '高宏（哈尔滨工业大学） ',
+        '宣传主席（ Publicity Co-Chairs）',
+        '高云君（浙江大学）',
+        '姚斌（上海交通大学）',
+        '出版主席（ Publication Co-Chairs）',
+        '寿黎但（浙江大学）',
+        '张东祥（电子科技大学）',
+        '演示主席（ Demo Co-Chairs）',
+        '马帅（北京航空航天大学）',
+        '伍赛（浙江大学）',
+        '文集主席（ Proceedings Chair）',
+        '卢卫（中国人民大学）',
+        '江大伟（浙江大学）',
+        '组织主席（ Local Co-Chairs）',
+        '孙建伶（浙江大学）',
+        '陆慧娟（中国计量大学）',
+        '杨良怀（浙江工业大学）',
+        '任祖杰（杭州电子科技大学）',
+        '会议网站主席（ Website Chair）',
+        '胡天磊（浙江大学）',
+        '财务主席（ Treasure Co-Chairs）',
+        '陈珂（浙江大学）',
+        '张勤（浙江大学）'];
+        var content = []
+        for(var i = 0; i < organizers.length; ++ i) {
+            if(organizers[i].indexOf("主席") > 0) {
+                content.push("<br>");
+                content.push("<div>");
+                content.push("<b>");
+                content.push(organizers[i]);
+                content.push("</b>");
+                content.push("</div>");
+            }
+            else {
+                content.push("<div>");
+                content.push(organizers[i]);
+                content.push("</div>");
+            }
+        }
+        $('#organizers-div').html(content.join(''));
+    })
+</script>

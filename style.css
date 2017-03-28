@@ -13,14 +13,14 @@ body {
     font-family: Arial;
 }
 
-.container a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+/*.container a {*/
+    /*float: left;*/
+    /*font-size: 16px;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*padding: 14px 16px;*/
+    /*text-decoration: none;*/
+/*}*/
 
 .dropdown {
     float: left;
@@ -109,4 +109,25 @@ a.link:active {
 
 ul li {
     list-style: none;
+}
+
+table#area-table, table#area-table th, table#area-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table#area-table th, table#area-table td {
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+table#area-table td {
+    min-width: 200px;
+}
+
+p {
+    text-indent: 1cm;
+}
+
+span.notice-item {
+    font-weight: bold;
 }
