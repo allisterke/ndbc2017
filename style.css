@@ -10,7 +10,7 @@ body {
 .container {
     overflow: hidden;
     background-color: #333;
-    font-family: Arial;
+    /*font-family: Arial;*/
 }
 
 /*.container a {*/
@@ -81,7 +81,7 @@ img {
 
 .footer {
     /*background-color: #333;*/
-    font-family: Arial;
+    /*font-family: Arial;*/
     text-align: center;
     /*color: #ffffff;*/
 }
