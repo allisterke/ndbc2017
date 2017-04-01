@@ -9,13 +9,17 @@
     <script>
         $(document).ready(function() {
             if(mobileAndTabletcheck()) {
-                document.body.style.width = '100%';
-                document.body.style.left = 0;
+                $('div.menu')[0].style.width = '100%';
+                $('div.menu')[0].style.left = 0;
+                $('div.footer')[0].style.width = '100%';
+                $('div.footer')[0].style.left = 0;
+
             }
         });
     </script>
 </head>
 <body>
+<div class="menu">
 <div class="container">
     <div class="dropdown">
         <button class="dropbtn" onclick="window.location = 'index.html'" style="font-family: 'Microsoft JhengHei', 'PingFang', '宋体';">NDBC2017</button>
@@ -85,12 +89,21 @@
         </div>
     </div>
 </div>
+</div>
+
+<div class="content">
 
 <!-- fill content here -->
 
-<hr>
+</div>
+
+
 <div class="footer">
+
+<hr>
+    <div>
     The 34th National Database Conference (NDBC 2017)
+    </div>
 </div>
 
 </body>

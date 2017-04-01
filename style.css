@@ -1,9 +1,6 @@
 body {
     padding: 0px;
     margin: 0px;
-    position: absolute;
-    width: 80%;
-    left: 10%;
     font-family: "Arial", "Microsoft JhengHei", "PingFang", '宋体';
 }
 
@@ -80,7 +77,22 @@ img {
     margin: 0;
 }
 
+.menu {
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.content {
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
 .footer {
+    position: relative;
+    width: 80%;
+    left: 10%;
     /*background-color: #333;*/
     /*font-family: Arial;*/
     text-align: center;
