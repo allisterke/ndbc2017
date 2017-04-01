@@ -5,6 +5,15 @@
     <script src="jquery.min-3.2.1.js"></script>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <title>NDBC2017</title>
+    <script src="mobile.js"></script>
+    <script>
+        $(document).ready(function() {
+            if(mobileAndTabletcheck()) {
+                document.body.style.width = '100%';
+                document.body.style.left = 0;
+            }
+        });
+    </script>
 </head>
 <body>
 <div class="container">
