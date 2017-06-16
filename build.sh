@@ -1,7 +1,10 @@
 #!/bin/bash
 
-META="$(ls *.meta.html)"
-#META=index.meta.html
+META=$1
+
+if [ $# -eq 0 ]; then
+    META="$(ls *.meta.html)"
+fi
 
 replace() {
 	while read -r LINE; do
