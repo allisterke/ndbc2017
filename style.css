@@ -160,4 +160,5 @@ table.registry tr td {
 table.registry tr:first-child td {
     border-top: none;
     /*border-bottom: none;*/
+    font-weight: bold;
 }
