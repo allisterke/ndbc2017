@@ -144,3 +144,20 @@ p {
 span.notice-item {
     font-weight: bold;
 }
+
+table.registry {
+    /*border-collapse: collapse;*/
+    border-spacing: 0px;
+}
+
+table.registry tr td {
+    padding: 5px 10px;
+    min-width: 100px;
+    border-top: solid 1px;
+    /*border-bottom: solid 1px;*/
+}
+
+table.registry tr:first-child td {
+    border-top: none;
+    /*border-bottom: none;*/
+}
