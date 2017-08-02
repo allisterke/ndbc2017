@@ -33,7 +33,7 @@ cat group-discuss.htm |
     sed -r 's/ width=[[:alpha:][:digit:]-]*//g' |
     sed -r 's/ valign=[[:alpha:][:digit:]-]*//g' |
     cat -n |
-    sed -r 's/^ *10 */<tr><td colspan=3 style="padding:20px; font-weight: bold; background-color: lightgrey;">系统演示：<\/td><\/tr>/' |
+    sed -r 's/^ *10 */<tr><td colspan=3 style="padding:20px; font-weight: bold; background-color: lightgrey;"><a id="demo">系统演示：<\/a><\/td><\/tr>/' |
     sed -r 's/^ *([[:digit:]]) */<tr><td colspan=3 style="padding:20px; font-weight: bold; background-color: lightgrey;">分组讨论\1：<\/td><\/tr>/'
 echo '</table>'
 ) | less
