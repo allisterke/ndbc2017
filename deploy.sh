@@ -5,6 +5,7 @@ if [ -z $1 ]; then
 	exit 1
 fi
 
+bash build.sh
 bash pack.sh
 #ssh cuda 'rm -rf /var/www/ndbc2017/*'
 cat ndbc2017.tgz | ssh $1 'tar xzf - -C /var/www/ndbc2017'

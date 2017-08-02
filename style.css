@@ -159,3 +159,34 @@ table.registry tr:first-child td {
     border: none;
     font-weight: bold;
 }
+
+div.agenda-table table {
+    width: 80%;
+    margin: 20px 0;
+}
+
+div.agenda-table table tr td {
+    padding: 5px;
+}
+
+div.accommodation-table table {
+    width: 80%;
+    text-align: center;
+}
+
+div.accommodation-table table tr td {
+    padding: 10px 0;
+}
+
+div.group-discuss-table table {
+    width: 100%;
+}
+
+div.group-discuss-table table tr td {
+    padding: 10px 5px;
+}
+
+div.group-discuss-table table tr td:first-child {
+    padding-left: 10px;
+    padding-right: 10px;
+}
