@@ -190,3 +190,8 @@ div.group-discuss-table table tr td:first-child {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+span.warning {
+    color: red;
+    font-weight: bold;
+}
