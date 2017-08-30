@@ -6,6 +6,8 @@ if [ $# -eq 0 ]; then
     META="$(ls *.meta.html)"
 fi
 
+TEMPLATE=$(cat template.html | sed -r 's/"style.css"/"style.css?v='$(date +%s)'"/')
+
 replace() {
 	while read -r LINE; do
 		if ! echo "$LINE"  | grep "<!-- fill content here -->" > /dev/null; then
@@ -13,7 +15,7 @@ replace() {
 		else
 			cat "$1" 
 		fi
-	done < template.html
+	done < <(echo "$TEMPLATE")
 }
 
 for meta in $META; do
