@@ -3,7 +3,7 @@
 # save Word as html
 # parse table from html
 
-cat agenda.html |
+cat agenda.htm |
     iconv -f gbk |
     tr -d '[\r\n]' |
     grep -P -o '<table.*?</table>' |
