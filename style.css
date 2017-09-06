@@ -195,3 +195,16 @@ span.warning {
     color: red;
     font-weight: bold;
 }
+
+div#organizers-div {
+    left: 10%;
+    position: relative;
+}
+
+div#invitation-div {
+    text-align: center;
+}
+
+div#invitation-div div {
+    padding: 10px;
+}
