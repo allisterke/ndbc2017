@@ -208,3 +208,20 @@ div#invitation-div {
 div#invitation-div div {
     padding: 10px;
 }
+
+div.related-departments ul li {
+    display: flex;
+    justify-content: flex-start;
+}
+
+div.related-departments ul li div:first-child {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+div.related-departments ul li div a {
+    padding: 0 4px;
+}
