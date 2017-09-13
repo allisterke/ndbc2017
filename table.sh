@@ -14,7 +14,8 @@ cat agenda.htm |
     sed -r "s/style='[^']*?'//g" |
     sed -r 's/ class=[[:alpha:][:digit:]-]*//g' |
     sed -r 's/ lang=[[:alpha:][:digit:]-]*//g' |
-    sed -r 's/ width=[[:alpha:][:digit:]-]*//g' | less
+    sed -r 's/ width=[[:alpha:][:digit:]-]*//g' |
+    sed -r 's/[?？]//g' | less
 
 (
 echo '<table border=1 cellspacing=0 cellpadding=0 >'
