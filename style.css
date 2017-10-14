@@ -316,3 +316,39 @@ div.person h4 {
 div.dropdown-content table tr td {
     max-width: 10em;
 }
+
+.group {
+    padding:20px;
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+div#sigmod-div {
+    left: 10%;
+    width: 80%;
+    position: relative;
+}
+
+div#sigmod-div img {
+    width: 200px;
+}
+
+div#big-data-forum-div {
+    left: 10%;
+    width: 80%;
+    position: relative;
+}
+
+div#big-data-forum-div img {
+    width: 200px;
+}
+
+div#block-chain-forum-div {
+    left: 10%;
+    width: 80%;
+    position: relative;
+}
+
+div#block-chain-forum-div img {
+    width: 200px;
+}

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-META=$1
+META="$*"
 
 if [ $# -eq 0 ]; then
     META="$(ls *.meta.html)"

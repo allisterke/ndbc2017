@@ -24,6 +24,7 @@ cat group-discuss.htm |
     tr -d '[\r\n]' |
     grep -P -o '<table.*?</table>' |
     sed -r 's/<\/?span[^>]*>//g' |
+    sed -r 's/<\/?a[^>]*>//g' |
     sed -r 's/<\/?table[^>]*>//g' |
     sed -r 's/<\/?o:p>//g' |
     sed -r 's/<\/?p[^>]*>//g' |
@@ -33,9 +34,7 @@ cat group-discuss.htm |
     sed -r 's/ lang=[[:alpha:][:digit:]-]*//g' |
     sed -r 's/ width=[[:alpha:][:digit:]-]*//g' |
     sed -r 's/ valign=[[:alpha:][:digit:]-]*//g' |
-    cat -n |
-    sed -r 's/^ *10 */<tr><td colspan=3 style="padding:20px; font-weight: bold; background-color: lightgrey;"><a id="demo">系统演示：<\/a><\/td><\/tr>/' |
-    sed -r 's/^ *([[:digit:]]) */<tr><td colspan=3 style="padding:20px; font-weight: bold; background-color: lightgrey;">分组讨论\1：<\/td><\/tr>/'
+    sed -r 's/<td colspan=3 *>([^<]*)<\/td>/<td colspan=3 class="group">\1<\/td>/g'
 echo '</table>'
 ) | less
 
