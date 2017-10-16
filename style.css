@@ -352,3 +352,17 @@ div#block-chain-forum-div {
 div#block-chain-forum-div img {
     width: 200px;
 }
+
+div#transport-div {
+    left: 10%;
+    width: 80%;
+    position: relative;
+}
+
+div#transport-div div.map {
+    display: flex;
+}
+
+div#transport-div div.map img {
+    margin: auto;
+}
